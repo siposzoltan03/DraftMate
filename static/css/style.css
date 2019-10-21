@@ -1,0 +1,121 @@
+.table {
+    background-color: darkgreen;
+    position: relative;
+    width: 960px;
+    height: 700px;
+    margin: auto;
+    max-width: 960px;
+}
+.deck{
+    float: right;
+    padding: 5px 5px;
+}
+
+.trump{
+    float: left;
+    padding: 5px;
+}
+
+#left {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+}
+
+#right {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+}
+
+#top {
+    position: absolute;
+    top: 10px;
+    left: 35%
+}
+
+#player {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+}
+
+#turn {
+    position: absolute;
+    top: 40%;
+    left: 27%;
+}
+
+#turn .border {
+    margin: 5px;
+    padding: 5px;
+    border: white solid 1px;
+    border-radius: 4px;
+    width: 102px;
+    height: 138px;
+    float: left;
+}
+
+img.turn-card {
+    width: 90px;
+}
+
+body {
+    overflow:visible !important;
+    background-image: url("../images/poker.jpg");
+    margin-top: -20px;
+    margin-bottom: -20px;
+    background-repeat: repeat;
+}
+
+.round {
+    width: 960px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+}
+
+#player-turn {
+    font-size: 50px;
+    text-align: center;
+}
+
+#score-table {
+    width: 960px;
+    margin: auto;
+    background-color: white;
+}
+
+.player1, .player2, .player3, .player4 {
+    width : 240px;
+    float: left;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+}
+
+.player1, .player2, .player3 {
+    border-right: solid black 1px;
+}
+
+h1 {
+    padding-top: 20px;
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+}
+
+#bet-block {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid red 3px;
+}
+
+.hidden {display: none}
+
+.body {
+    background-color: white;
+    margin-top: 150px;
+}

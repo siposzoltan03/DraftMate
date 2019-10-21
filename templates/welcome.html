@@ -1,0 +1,43 @@
+
+{% extends 'layout.html' %}
+
+{% block head %}
+  <script src="{{ url_for ('static', filename='js/main.js') }}" type="text/javascript" defer></script>
+{% endblock %}
+
+{% block content %}
+    <div class="body">
+    <div class="welcome"><h1>Welcome to Rikiki!</h1>
+        <button id="button">Game rules</button>
+        <div id="rules">
+            <ul>
+                <li>Aim To win the most points by accurately predicting how many tricks you'll get in each round</li>
+                <li>The dealer deals the cards.</li>
+                <li>The dealer takes a card from remaining deck and place it down. That is the trump card.</li>
+                <li>Players begin to bid how many tricks they can take.</li>
+                <li>Play begins: you must place same color as the first player in turn.</li>
+                <li>If you do not have the same color, you can either put a trump or anything.</li>
+                <li>The hand will be won by the highest card or who places trump down.</li>
+                <li>Once all cards have been played, the dealer tallies up the score.</li>
+                <li>If a player takes the exact number of tricks he bid, he receives 10 points, plus twice number he bid.</li>
+                <li>If a player takes any other number of tricks, he will be deducted points.</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h2>Let's play!</h2>
+        <h3>Enter your names:</h3>
+        <form action="/play" method="get" id="player-input">
+            <label for="player1">Player 1</label><br>
+            <input id="player1" name="player1" type="text" required><br>
+             <label for="player2">Player 2</label><br>
+            <input id="player2" name="player2" type="text" required><br>
+             <label for="player3">Player 3</label><br>
+            <input id="player3" name="player3" type="text" required><br>
+             <label for="player4">Player 4</label><br>
+            <input id="player4" name="player4" type="text" required><br>
+            <button type="submit" value="Submit">We are ready!</button>
+        </form>
+    </div>
+    </div>
+{% endblock %}
